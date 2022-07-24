@@ -1,4 +1,5 @@
-import { deep, swiss } from "@theme-ui/presets";
+import { deep, swiss } from '@theme-ui/presets';
+import nightOwl from '@theme-ui/prism/presets/night-owl.json';
 
 const theme = {
   ...swiss,
@@ -14,11 +15,12 @@ const theme = {
   styles: {
     ...swiss.styles,
     p: {
-      fontFamily: "body",
-      fontWeight: "body",
-      lineHeight: "body",
+      fontFamily: 'body',
+      fontWeight: 'body',
+      lineHeight: 'body',
       fontSize: 3,
     },
+    code: { ...nightOwl },
   },
 };
 
